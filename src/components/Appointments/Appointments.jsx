@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import Button from "components/UI/Button/Button";
-import Modal from "components/UI/Modal/Modal";
-import Loading from "components/UI/Loading/Loading";
-import Input from "components/UI/Input";
+import Button from "../UI/Button/Button";
+import Modal from "../UI/Modal/Modal";
+import Loading from "../UI/Loading/Loading";
+import Input from "../UI/Input";
 import classes from "./Appointments.module.css";
-import useEmail from "hooks/use-email";
+import useEmail from "../../hooks/use-email";
 
 const defaultModalState = {
   show: false,

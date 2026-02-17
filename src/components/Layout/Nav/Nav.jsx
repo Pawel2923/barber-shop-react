@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Option from "./Option";
 import classes from "../Header.module.css";
-import { ReactComponent as Logo } from "assets/logo.svg";
+import logo from "../../../assets/logo.svg";
 
 const Nav = () => {
   return (
@@ -14,7 +14,7 @@ const Nav = () => {
           className={classes["image-wrapper"]}
           title="Przejdź na stronę główną"
         >
-          <Logo />
+          <img src={logo} alt="Logo" className={classes.logo} />
         </Link>
       </li>
       <Option link={{ to: "/" }}>Strona główna</Option>

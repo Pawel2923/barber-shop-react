@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 import Product from "./Product";
 import Aside from "./Aside/Aside";
-import Button from "components/UI/Button/Button";
-import Loading from "components/UI/Loading/Loading";
+import Button from "../UI/Button/Button";
+import Loading from "../UI/Loading/Loading";
 import classes from "./Products.module.css";
-import Modal from "components/UI/Modal/Modal";
-import useHttp from "hooks/use-http";
+import Modal from "../UI/Modal/Modal";
+import useHttp from "../../hooks/use-http";
 import sortProducts from "./sortProducts";
 import filterProducts from "./filterProducts";
 

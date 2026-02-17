@@ -1,6 +1,6 @@
 import React from "react";
 
-import Contact from "components/UI/Contact/Contact";
+import Contact from "../UI/Contact/Contact";
 
 const ContactPage = () => {
   return (

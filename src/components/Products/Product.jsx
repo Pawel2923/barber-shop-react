@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import Ratings from "./Ratings";
 import classes from "./Product.module.css";
+import { getImageUrl } from "../../utils/product-images";
 
 const Product = (props) => {
   const productInfo = props.info;
@@ -12,7 +13,7 @@ const Product = (props) => {
       <div className={classes.card}>
         <div className={classes["image-wrapper"]}>
           <img
-            src={require(`assets/${productInfo.imagePath}`)}
+            src={getImageUrl(productInfo.imagePath)}
             alt="Zdjęcie produktu"
             className={classes.image}
           />

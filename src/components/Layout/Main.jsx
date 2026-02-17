@@ -1,11 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 
-import Home from "components/Home/Home";
-import Appointments from "components/Appointments/Appointments";
-import Products from "components/Products/Products";
-import ProductDetail from "components/Products/ProductDetail";
-import Cart from "components/Cart/Cart";
-import ContactPage from "components/ContactPage/ContactPage";
+import Home from "../Home/Home";
+import Appointments from "../Appointments/Appointments";
+import Products from "../Products/Products";
+import ProductDetail from "../Products/ProductDetail";
+import Cart from "../Cart/Cart";
+import ContactPage from "../ContactPage/ContactPage";
 
 import classes from "./Main.module.css";
 

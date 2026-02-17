@@ -1,14 +1,15 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 
-import Amount from "components/UI/Amount/Amount";
-import Button from "components/UI/Button/Button";
-import Modal from "components/UI/Modal/Modal";
+import Amount from "../UI/Amount/Amount";
+import Button from "../UI/Button/Button";
+import Modal from "../UI/Modal/Modal";
 import Ratings from "./Ratings";
 import classes from "./ProductDetail.module.css";
-import CartContext from "store/cart-context";
-import useHttp from "hooks/use-http";
-import Loading from "components/UI/Loading/Loading";
+import CartContext from "../../store/cart-context";
+import useHttp from "../../hooks/use-http";
+import Loading from "../UI/Loading/Loading";
+import { getImageUrl } from "../../utils/product-images";
 
 const requestConfig = {
   url: "https://barber-shop-react-default-rtdb.europe-west1.firebasedatabase.app/products.json",
@@ -130,7 +131,7 @@ const ProductDetail = () => {
             <div className={classes["image-wrapper"]}>
               <h1>{targetItem.title}</h1>
               <img
-                src={require(`assets/${targetItem.imagePath}`)}
+                src={getImageUrl(targetItem.imagePath)}
                 className={classes.image}
                 alt="Zdjęcie produktu"
               />

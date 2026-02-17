@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Option from "./Option";
 import classes from "./MobileNav.module.css";
-import { ReactComponent as Logo } from "assets/logo.svg";
+import logo from "../../../assets/logo.svg";
 
 const portalContainer = document.getElementById("overlays");
 
@@ -19,7 +19,7 @@ export const NavOverlay = (props) => {
         <div className={classes["close-wrapper"]}>
           <i className="fa-solid fa-xmark" onClick={closeHandler}></i>
           <Link to="/" className={classes["image-wrapper"]}>
-            <Logo />
+            <img src={logo} alt="Logo" className={classes.logo} />
           </Link>
         </div>
         <ul>
@@ -66,7 +66,7 @@ const MobileNav = () => {
       </li>
       <li>
         <Link to="/" className={classes["image-wrapper"]}>
-          <Logo />
+          <logo />
         </Link>
       </li>
       {!isOverlayClosed &&

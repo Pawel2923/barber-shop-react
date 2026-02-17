@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import classes from "./BackToTop.module.css";
-import WindowSizeContext from "store/window-size";
+import WindowSizeContext from "../../../store/window-size";
 
 const BackToTop = () => {
   const windowSizeCtx = useContext(WindowSizeContext);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Button from "components/UI/Button/Button";
+import Button from "../../UI/Button/Button";
 import classes from "./Contact.module.css";
 
 const Contact = (props) => {

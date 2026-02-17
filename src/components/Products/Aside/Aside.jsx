@@ -1,9 +1,9 @@
 import { Fragment, useState, useContext, useEffect } from "react";
 
-import Button from "components/UI/Button/Button";
+import Button from "../../UI/Button/Button";
 import { categories } from "./categories";
 import classes from "./Aside.module.css";
-import WindowSizeContext from "store/window-size";
+import WindowSizeContext from "../../../store/window-size";
 
 const Aside = (props) => {
   const windowSizeCtx = useContext(WindowSizeContext);
